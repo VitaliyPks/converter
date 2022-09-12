@@ -1,0 +1,73 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 300px;
+  height: 175px;
+  margin: auto;
+  margin-top: 30vh;
+  background: linear-gradient(rgb(235, 48, 48),rgb(208, 120, 127));
+  border-radius: 15px;
+
+  h3{
+    color: rgb(0, 0, 0);
+  }
+
+  form{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  
+  div {
+    margin: 5px;
+
+    input{
+      border-radius: 5px;
+      border: none;
+    }
+
+    input:hover{
+      height: 17px;
+    }
+
+    input:focus{
+      height: 17px;
+      outline: none;
+      border: 1px solid rgb(4, 4, 4);
+    }
+
+    select {
+      border-radius: 5px;
+      border: none;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    option{
+      border-radius: 5px;
+     }
+
+    select:focus {
+      height: 17px;
+      outline:none;
+      border: 1px solid rgb(4, 4, 4);
+    }
+
+    select:hover {
+      background-color: rgb(195, 208, 208);
+    }
+  }
+
+  button {
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgb(195, 208, 208);
+  }
+}
