@@ -13,6 +13,7 @@ function App() {
     const response = await fetch('https://api.apilayer.com/currency_data/list', {
       headers: { apikey: 'ykhf0AURgo7QYodMitcoxPqxI2ja9U7w' },
     });
+
     const data = await response.json();
 
     setCurrency1(data.currencies);
@@ -25,12 +26,15 @@ function App() {
 
   async function converter(e) {
     e.preventDefault();
+
     const response = await fetch(`https://api.apilayer.com/currency_data/live?source=${value1}&currencies=${value2}`, {
       headers: { apikey: 'ykhf0AURgo7QYodMitcoxPqxI2ja9U7w' },
     });
+
     const data = await response.json();
     const course = data.quotes[`${value1}${value2}`];
     const num = (course * (input1 || 1)).toFixed(2);
+
     setInput2(num);
   }
 
