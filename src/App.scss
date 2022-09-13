@@ -1,5 +1,6 @@
 .container{
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-content: center;
   align-items: center;
@@ -69,5 +70,29 @@
   }
   button:hover {
     background-color: rgb(195, 208, 208);
+  }
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  animation-name: image;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
+  img{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes image{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }
