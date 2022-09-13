@@ -6,7 +6,7 @@
 
 ![](public/1.png)
 
-Для запуска наберите команду `npm start` находясь в любом редакторе кода, либо можете использовать его по ссылке [https://currconverte.com](https://currconverte.herokuapp.com)
+Для запуска наберите команду `npm start` или можете перейти на его страницу [https://currconverte.com](https://currconverte.herokuapp.com)
 
 ![](public/2.png)
 
