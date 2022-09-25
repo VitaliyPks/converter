@@ -29,11 +29,11 @@
       border: none;
     }
 
-    input:hover{
+    &:hover{
       height: 17px;
     }
 
-    input:focus{
+    &:focus{
       height: 17px;
       outline: none;
       border: 1px solid rgb(4, 4, 4);
@@ -50,13 +50,13 @@
       border-radius: 5px;
      }
 
-    select:focus {
+    &:focus {
       height: 17px;
       outline:none;
       border: 1px solid rgb(4, 4, 4);
     }
 
-    select:hover {
+    &:hover {
       background-color: rgb(195, 208, 208);
     }
   }
@@ -68,7 +68,7 @@
     margin-top: 3px;
     cursor: pointer;
   }
-  button:hover {
+  &:hover {
     background-color: rgb(195, 208, 208);
   }
 }
